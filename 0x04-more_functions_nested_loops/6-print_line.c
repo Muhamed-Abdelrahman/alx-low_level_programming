@@ -3,7 +3,7 @@
 /**
  * print_line - multiplies two integers
  *              only using _putchar twice
- *
+ *@n: is var
  * Return: Always 0 (Success)
 */
 
