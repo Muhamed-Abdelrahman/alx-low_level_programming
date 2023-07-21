@@ -10,20 +10,25 @@
 
 void print_triangle(int size)
 {
-	int i, j;
+	int row, has, spas;
 
 	if (size <= 0)
 	{
-	_putchar('\n');
-	return;
+		_putchar('\n');
 	}
-
-	for (i = 1; i <= size; i++)
+	else
 	{
-		for (j = 1; j <= i; j++)
+		for (row = 1; row <= size; row++)
 		{
-			_putchar('#');
-		}
+			for (spas = size - row; spas >= 1; spas--)
+			{
+				_putchar(' ');
+			}
+			for (has = 1 ; has <= row ; has++)
+			{
+				_putchar('#');
+			}
 			_putchar('\n');
+		}
 	}
 }
