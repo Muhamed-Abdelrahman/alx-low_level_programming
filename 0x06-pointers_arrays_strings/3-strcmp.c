@@ -12,26 +12,17 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int a, b, indx, i;
+	int equ = 0;
 
-	indx = 0;
-	a = 0;
-	b = 0;
-	while (s1[a])
-		a++;
-	while (s2[b])
-		b++;
-	if (a >= b)
-		indx = a;
-	else
-		indx = b;
-	for (i = 0; i < indx; i++)
+	while (*s1)
 	{
-		if (s1[i] > s2[i])
-			return (15);
-		else if (s1[i] < s2[i])
-			return (-15);
-		else
-			return (0);
+		if (*s1 != *s2)
+		{
+			equ = ((int)*s1 - 48) - ((int)*s2 - 48);
+			break;
+		}
+		s1++;
+		s2++;
 	}
+	return (equ);
 }
