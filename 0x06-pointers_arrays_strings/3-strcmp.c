@@ -14,6 +14,7 @@ int _strcmp(char *s1, char *s2)
 {
 	int a, b, indx, i;
 
+	indx = 0;
 	a = 0;
 	b = 0;
 	while (s1[a])
