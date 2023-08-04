@@ -10,7 +10,7 @@
  * Return: print follwed by line
 */
 
-int main(int argc, char const *argc[])
+int main(int argc, char const *argv[])
 {
 	int i;
 
