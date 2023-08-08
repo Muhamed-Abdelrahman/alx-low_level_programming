@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _create_array - check if c is upper
+ * create_array - check if c is upper
  *
  * @size: is var
  *
