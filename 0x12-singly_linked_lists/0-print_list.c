@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 
 /**
  * _strln - count the char
@@ -31,7 +31,7 @@ size_t print_list(const list_t *h)
 
 	while (h)
 	{
-		printf("[%d] %s\n", _strln(h->str), h->str ? h->str : (nil));
+		printf("[%d] %s\n", _strln(h->str), h->str ? h->str : "(nil)");
 		h = h->next;
 		i++;
 	}
