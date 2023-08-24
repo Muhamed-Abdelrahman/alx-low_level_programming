@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * list_len - count the char
+ * add_node - count the char
  *
  * @head: is var
  * @str: is var
