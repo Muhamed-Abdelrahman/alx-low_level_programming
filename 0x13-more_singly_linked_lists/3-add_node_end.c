@@ -1,29 +1,25 @@
 #include "lists.h"
 
 /**
- * add_node_end - count the char
+ * add_nodeint_end - count the char
  *
  * @head: is var
- * @str: is var
+ * @n: is var
  *
  * Return: number
 */
-list_t *add_node_end(list_t **head, const char *str)
+listint_t *add_nodeint_end(listint_t **head, const int n);
 {
-	list_t *newhead = malloc(sizeof(list_t));
-	list_t *node = *head;
+	list_t *newhead = malloc(sizeof(listint_t));
+	listint_t *node = *head;
 
 	if (!head || !newhead)
 		return (NULL);
-	if (str)
+	newhead->n = n;
+	if (!newhead->n)
 	{
-		newhead->str = strdup(str);
-		if (!newhead->str)
-		{
-			free(newhead);
-			return (NULL);
-		}
-		newhead->len = _strln(newhead->str);
+		free(newhead);
+		return (NULL);
 	}
 	if (node)
 	{
