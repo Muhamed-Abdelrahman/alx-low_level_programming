@@ -1,13 +1,13 @@
 #include "lists.h"
 
 /**
- * list_len - count the char
+ * listint_len - count the char
  *
  * @h: is var
  *
  * Return: number
 */
-size_t list_len(const list_t *h)
+size_t listint_len(const listint_t *h)
 {
 	size_t i = 0;
 
